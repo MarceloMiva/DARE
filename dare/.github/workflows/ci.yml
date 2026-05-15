@@ -1,0 +1,23 @@
+name: DARE CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  syntax-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+    - name: Check syntax
+      run: python3 -m py_compile dare.py modules/*.py utils/*.py
+    - name: Run import test
+      run: python3 -c "import modules.recon, modules.scanner, modules.web, modules.hash_tools, modules.encoder, modules.exploit_helper; print('All modules imported OK')"

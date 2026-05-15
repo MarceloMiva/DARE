@@ -1,0 +1,9 @@
+# DARE — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core (mostly stdlib — these are optional enhancements)
+dnspython>=2.3.0       # Enhanced DNS enumeration (recon module)
+
+# Optional — uncomment if you want richer output
+# colorama>=0.4.6      # Windows color support
+# requests>=2.28.0     # Alternative to urllib (drop-in for web module)
