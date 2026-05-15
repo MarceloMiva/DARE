@@ -211,3 +211,8 @@ MIT License — see [LICENSE](LICENSE) for details.
 Built for the security community. Inspired by frameworks like [Metasploit](https://metasploit.com), [Reconspider](https://github.com/bhavsec/reconspider), and various CTF writeups.
 
 > **Remember: Hack ethically. Get permission. Learn responsibly.**
+> [
+
+![CI](https://github.com/MarceloMiva/DARE/actions/workflows/ci.yml/badge.svg)
+
+](https://github.com/MarceloMiva/DARE/actions/workflows/ci.yml)
